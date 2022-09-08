@@ -1,5 +1,8 @@
 import math as m
-import replit
+import os
+
+def clear():
+  os.system('clear' if os.name == 'posix' else 'cls')
 
 def isPalindrome(n):
   n = str(n)
@@ -44,6 +47,6 @@ for index, product in enumerate(products):
     else:
       continue
 
-replit.clear()
+clear()
 
 print("Highest Palindrome Value is: {}".format(maxPdrome))

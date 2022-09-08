@@ -1,6 +1,8 @@
-import replit
+import os
 import datetime
 
+def clear():
+  os.system('clear' if os.name == 'posix' else 'cls')
 
 def int_input(message, range1 = "null", range2 = "null"):
   while True:
@@ -57,4 +59,4 @@ while True:
   print("Execution Time was " + str(timeEnd - timeStart))
   print("")
   input("Press enter to continue.")
-  replit.clear()
+  clear()

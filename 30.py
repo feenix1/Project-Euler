@@ -1,4 +1,7 @@
-import replit
+import os
+
+def clear():
+    os.system('clear' if os.name == 'posix' else 'cls')
 
 power5num = []
 numString = ""
@@ -20,7 +23,7 @@ for num in range(10, 295245):
 
   # print("Num: {} | Length: {}".format(num, len(power5num)), end = "\r")
 
-replit.clear()
+clear()
 
 print("Numbers that fit criteria are:")
 print(power5num)
