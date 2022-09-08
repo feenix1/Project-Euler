@@ -1,3 +1,7 @@
+# Project Euler 7
+
+# What is the 10,001st prime number?
+
 primeDivList = [2]
 primeList = []
 
